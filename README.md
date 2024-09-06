@@ -71,31 +71,31 @@ Buttons are circular, white with pink shadows and text.
 The middle play/pause button is larger and has a different color scheme (pink background, white icon).
 
 ## Of Javascript code
-### 1.Element Selection:
+### 1. Element Selection:
 Retrieves HTML elements using getElementById and querySelector for the progress bar, audio player (songs), control icon (ctrlIcon), list display, and song title/artist name.
-Show/Hide Song List:
 
+### 2. Show/Hide Song List:
 showLists(): Sets the song list (.list) to display flex when the menu icon is clicked.
 closelists(): Hides the song list by setting its display to none.
-Metadata for Song Progress:
 
+### 3. Metadata for Song Progress:
 When song metadata is loaded (onloadedmetadata event), the duration of the song is set as the maximum value of the progress bar, and the current time is set as the initial progress.
-Play/Pause Toggle:
 
+### 4. Play/Pause Toggle:
 playPause(): Toggles between play and pause states:
 If the song is playing, it pauses the song and changes the control icon to a play icon.
 If the song is paused, it plays the song and changes the icon to a pause icon.
-Song Change Functions:
 
+### 5. Song Change Functions:
 Functions (artic(), donthink(), unlove()) change the song being played:
 Updates the source (src) of the audio element to the selected song's file.
 Changes the song title and artist name displayed in the player.
 Automatically plays the new song using playPause().
-Progress Bar Updates:
 
+### 6. Progress Bar Updates:
 A setInterval function updates the progress bar in real-time while the song is playing, setting its value to the current time of the song every 100ms.
-Manual Progress Change:
 
+### 7. Manual Progress Change:
 When the user manually changes the progress bar (onchange event), the song skips to the selected time and starts playing. The play icon is also updated to a pause icon.
 
 
