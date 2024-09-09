@@ -15,27 +15,43 @@
         <div class="music-player">
             <nav>
                 <div class="circle">
-                    <i class="fa-solid fa-angle-left"></i>
+                    <div><i class="fa-solid fa-angle-left"></i></div>
                 </div>
                 <div class="circle">
-                    <i class="fa-solid fa-bars"></i>
+                    <i onclick="showLists()" style="cursor: pointer; " class="fa-solid fa-bars"></i>
                 </div>
-            </nav>
-            <img src="img/lisa.png" class="song-img">
-            <h1>505</h1>
-            <p>Official Artic Monkeys</p>
 
+            </nav>
+            <div class="list">
+                <div onclick="closelists()" style="cursor: pointer;" class="xmark"><i class="fa-solid fa-xmark"></i>
+                </div>
+                <div onclick="closelists()" class="left-angle"><i class="fa-solid fa-angle-left"></i></div>
+                <ul>
+                    <li onclick="artic()">Lisa - Unlasting Love</li>
+                    <li onclick="donthink()">I Don't Think So</li>
+                    <li onclick="unlove()">Artic Monkeys - 505</li>
+                    <li onclick="ripTide()">Vance Joy - Riptide</li>
+                    <li onclick="theDevil()">Soap&Skin - Me and the Devil</li>
+                </ul>
+            </div>
+            <div class="titleandname">
+                <img src="img/lisa.png" class="song-img">
+                <h1 class="title">Lisa</h1>
+                <p style="font-style: italic;" class="name">Unlasting Love</p>
+            </div>
             <audio controls id="songs">
-                <source src="media/505.mp3" type="audio/mpeg">
+                <source src="media/Unlasting Love.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="previousSong()"><i class="fa-solid fa-backward"></i></div>
                 <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-                <div><i class="fa-solid fa-forward"></i></div>
+                <div onclick="nextSong()"><i class="fa-solid fa-forward"></i></div>
             </div>
+
         </div>
+
     </div>
 
     <script src="main.js"></script>
