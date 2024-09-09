@@ -103,3 +103,24 @@ nav .circle {
     background: #f53192;
     color: #fff;
 }
+@media (max-width : 960px) {
+    .list {
+        top: 5.5%;
+        width: 350px;
+    }
+}
+
+@media (max-width :1000px) {
+    .list {
+        top: 5.5%;
+        width: 350px;
+        left: 33%;
+    }
+}
+
+@media(max-width: 436px) {
+    .list {
+        top: 4%;
+        left: 2;
+    }
+}
