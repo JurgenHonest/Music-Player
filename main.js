@@ -1,6 +1,9 @@
 let progress = document.getElementById("progress");
 let songs = document.getElementById("songs");
 let ctrlIcon = document.getElementById("ctrlIcon");
+const list = document.querySelector(".list");
+const title = document.querySelector(".title");
+const name = document.querySelector(".name");
 
 songs.onloadedmetadata = function () {
     progress.max = songs.duration;
