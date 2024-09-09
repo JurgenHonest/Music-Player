@@ -4,9 +4,92 @@
     box-sizing: border-box;
 }
 
+/* List style*/
+.list {
+    position: absolute;
+    top: 7.1%;
+    width: 350px;
+    left: 39%;
+    flex-direction: column;
+    margin-bottom: 26%;
+    padding: 10px 20px;
+    color: #f53192;
+    background: #ffe0e5;
+    border-collapse: collapse;
+    border-spacing: none;
+    border: 1px solid #ffe0e5;
+    display: none;
+    animation: all 0.5s ease-in;
+}
+
+.list .left-angle {
+    position: absolute;
+}
+
+.list .fa-angle-left {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    cursor: pointer;
+}
+
+.titleandname {
+    padding: 10px;
+}
+
+.titleandname h1 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.list ul {
+    list-style: none;
+    margin-left: 45px;
+}
+
+.list ul li {
+    position: relative;
+    border-bottom: 1px solid #f53192;
+    width: 200px;
+    cursor: pointer;
+}
+
+.list .xmark {
+    text-align: right;
+}
+
+.list .xmark i {
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #f53192;
+
+}
+
+.list i {
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.list i:hover {
+    font-size: 20px;
+}
+
+.list ul li {
+    margin: 1.5rem 0rem;
+}
+
+/* Main */
+
 .container {
     background: #333;
-
     width: 100%;
     height: 100vh;
     display: flex;
@@ -22,6 +105,20 @@
     text-align: center;
 }
 
+.music-player h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Nav Bar styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,6 +135,10 @@ nav .circle {
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
 }
 
+.fa-bars::after {
+    color: white;
+}
+
 .song-img {
     width: 250px;
     height: 170px;
@@ -46,17 +147,6 @@ nav .circle {
     box-shadow: 0 10px 60px rgba(255, 25, 26, 0.22);
 }
 
-.music-player h1 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #333;
-    margin-top: 20px;
-}
-
-.music-player p {
-    font-size: 14px;
-    color: #333;
-}
 
 #progress {
     -webkit-appearance: none;
@@ -78,6 +168,7 @@ nav .circle {
     box-shadow: 0 5px 5px rgba(255, 25, 26, 0.22);
 }
 
+/* Song Controls styles */
 .controls {
     display: flex;
     justify-content: center;
@@ -103,6 +194,7 @@ nav .circle {
     background: #f53192;
     color: #fff;
 }
+
 @media (max-width : 960px) {
     .list {
         top: 5.5%;
