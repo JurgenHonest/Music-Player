@@ -1,5 +1,5 @@
 # Music-Player
-https://sumit-musicplayer.netlify.app/
+https://sunny-gumption-8e2deb.netlify.app/
 ## Summary of HTML Code 
 ### 1. Document Structure:
 The HTML document defines a music player interface titled "Music Player - Good Quality Sound".
