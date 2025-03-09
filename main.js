@@ -5,11 +5,18 @@ const list = document.querySelector(".list");
 const title = document.querySelector(".title");
 const name = document.querySelector(".name");
 
+function showLists() {
+    list.style.display = "flex";
+}
+function closelists() {
+    list.style.display = "none"
+}
+
 songs.onloadedmetadata = function () {
     progress.max = songs.duration;
     progress.value = songs.currentTime;
 }
-/* Play and Pause feature */
+
 function playPause() {
     if (ctrlIcon.classList.contains("fa-pause")) {
         songs.pause();
@@ -23,7 +30,6 @@ function playPause() {
     }
 }
 
-/* Changing the song title and song artist respectively */
 function artic() {
     songs.src = "media/505.mp3";
     title.innerHTML = "Artic Monkey";
@@ -42,23 +48,13 @@ function unlove() {
     name.innerHTML = "Unlasting Love";
     playPause();
 }
-function ripTide() {
-    songs.src = "media/Riptide.mp3";
-    title.innerHTML = "Riptide";
-    name.innerHTML = "Vance Joy";
-    playPause();
-}
-function theDevil() {
-    songs.src = "media/Me and the devil.mp3";
-    title.innerHTML = "Me and the Devil";
-    name.innerHTML = "Soap&Skin";
-    playPause();
-}
-if (songs.pause()) {
+
+if (songs.play()) {
     setInterval(() => {
         progress.value = songs.currentTime;
-    }, 500);
+    }, 100);
 }
+
 progress.onchange = function () {
     songs.play();
     songs.currentTime = progress.value;
