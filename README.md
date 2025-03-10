@@ -19,5 +19,17 @@ A sleek and responsive music player built using HTML, CSS, and JavaScript. It su
 ## Installation 💻
 
 1. Clone this repository:
-   ```bash
+   ```
    git clone https://github.com/your-username/music-player-app.git
+   ```
+2. Navigate to the project folder:
+   ```
+   cd music-player-app
+   ```
+   Open the index.html file in your browser to see the music player in action
+
+## Usage 🎧
+- **Play/Pause**: Click the play button (▶️) to play the song, and click again to pause.
+- **Next/Previous Song**: Use the next (⏭️) and previous (⏮️) buttons to navigate between songs.
+- **Progress Bar**: The progress bar updates automatically as the song plays. You can manually adjust the progress by dragging the slider.
+
