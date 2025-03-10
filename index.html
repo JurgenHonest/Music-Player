@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player - Good Quality Sound</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c6d4c6daf2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/c6d4c6daf2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <div><i class="fa-solid fa-angle-left"></i></div>
-                </div>
-                <div class="circle">
-                    <i onclick="showLists()" style="cursor: pointer; " class="fa-solid fa-bars"></i>
-                </div>
-
-            </nav>
-            <div class="list">
-                <div onclick="closelists()" style="cursor: pointer;" class="xmark"><i class="fa-solid fa-xmark"></i>
-                </div>
-                <div onclick="closelists()" class="left-angle"><i class="fa-solid fa-angle-left"></i></div>
-                <ul>
-                    <li onclick="artic()">Lisa - Unlasting Love</li>
-                    <li onclick="donthink()">I Don't Think So</li>
-                    <li onclick="unlove()">Artic Monkeys - 505</li>
-                    <li onclick="ripTide()">Vance Joy - Riptide</li>
-                    <li onclick="theDevil()">Soap&Skin - Me and the Devil</li>
-                </ul>
-            </div>
-            <div class="titleandname">
-                <img src="img/lisa.png" class="song-img">
-                <h1 class="title">Lisa</h1>
-                <p style="font-style: italic;" class="name">Unlasting Love</p>
-            </div>
-            <audio controls id="songs">
-                <source src="media/Unlasting Love.mp3" type="audio/mpeg">
-            </audio>
-            <input type="range" value="0" id="progress">
-
-            <div class="controls">
-                <div onclick="previousSong()"><i class="fa-solid fa-backward"></i></div>
-                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-                <div onclick="nextSong()"><i class="fa-solid fa-forward"></i></div>
-            </div>
-
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle" onclick="showLists()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="list">
+          <div class="close-list" onclick="closelists()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul>
+            <li onclick="loadSong(0)">Lisa - Unlasting Love</li>
+            <li onclick="loadSong(1)">I Don't Think So</li>
+            <li onclick="loadSong(2)">Arctic Monkeys - 505</li>
+            <li onclick="loadSong(3)">Vance Joy - Riptide</li>
+            <li onclick="loadSong(4)">Soap&Skin - Me and the Devil</li>
+          </ul>
         </div>
-
+        <div class="song-info">
+          <img src="img/lisa.png" class="song-img" id="song-img" />
+          <h1 class="title" id="title">Unlasting Love</h1>
+          <p class="artist" id="artist">Lisa</p>
+        </div>
+        <audio controls id="songs">
+          <source src="media/Unlasting Love.mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div onclick="prevSong()">
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div onclick="nextSong()">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
     </div>
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
