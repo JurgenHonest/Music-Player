@@ -4,6 +4,14 @@ A sleek and responsive music player built using HTML, CSS, and JavaScript. It su
 
 ---
 
+## Demo 🎥
+
+Check out the live demo of the Music Player App here:
+
+[Live Demo](https://music-player-by-s.netlify.app/)
+
+---
+
 ## Features 🌟
 
 - ▶️ Play, pause, and toggle between songs.
@@ -22,13 +30,7 @@ A sleek and responsive music player built using HTML, CSS, and JavaScript. It su
 
 ---
 
-## Demo 🎥
 
-Check out the live demo of the Music Player App here:
-
-[Live Demo](https://your-username.github.io/music-player-app/)
-
----
 
 ## Installation 💻
 
