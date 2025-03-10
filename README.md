@@ -16,6 +16,12 @@ A sleek and responsive music player built using HTML, CSS, and JavaScript. It su
 - **CSS**: For styling the UI.
 - **JavaScript**: For interactivity and functionality.
 
+## Demo 🎥
+
+Check out the live demo of the Music Player App here:
+
+[Live Demo](https://your-username.github.io/music-player-app/)
+
 ## Installation 💻
 
 1. Clone this repository:
