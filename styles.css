@@ -19,23 +19,22 @@ body {
 
 /* Music Player Container */
 .container {
-  background: #222; /* Slightly Lighter Black */
+  background: #222;
   padding: 20px;
   width: 400px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3); /* Pink Glow */
+  box-shadow: 0 10px 30px #ff1493;
   text-align: center;
-  border: 2px solid #ff1493; /* Hot Pink Border */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for glowing effect */
+  border: 2px solid #ff1493;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Add glowing effect on hover */
 .container:hover {
   box-shadow: 0 0 20px 4px rgba(255, 20, 147, 0.7),
-    0 0 40px 6px rgba(255, 20, 147, 0.5); /* Glowing effect */
-  border: 2px solid #ff1493; /* Keep the pink border even when glowing */
+    0 0 40px 6px rgba(255, 20, 147, 0.5);
+  border: 2px solid #ff1493;
 }
-
 /* Navigation */
 nav {
   display: flex;
