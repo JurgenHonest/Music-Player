@@ -25,7 +25,9 @@ _(Experience seamless music playback with intuitive controls!)_
 
 ## 📸 Preview  
 
-![Music Player Preview](screenshot.png)  
+![Music Player Preview](![image](https://github.com/user-attachments/assets/3107fd9b-ce31-4182-873e-ab7a2cd553f3))  
+
+
 
 _(A sneak peek of the sleek and stylish music player UI)_  
 
