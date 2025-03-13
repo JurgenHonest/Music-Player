@@ -25,7 +25,7 @@ _(Experience seamless music playback with intuitive controls!)_
 
 ## 📸 Preview  
 
-![[Music Player Preview](https://github.com/user-attachments/assets/b7ea8635-4764-4f09-b840-fb22c4362558)
+![Music Player Preview](https://github.com/user-attachments/assets/b7ea8635-4764-4f09-b840-fb22c4362558)
 
 
 
