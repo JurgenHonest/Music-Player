@@ -6,7 +6,7 @@ A **modern, sleek, and responsive** music player built using **HTML, CSS, and Ja
 
 ## 🚀 Live Demo  
 
-🎵 **Try it Now:** [Live Demo](https://music-player-by-s.netlify.app/)  
+🎵 **Try it Now:**   [Live Demo](https://music-player-by-s.netlify.app/)  
 
 _(Experience seamless music playback with intuitive controls!)_  
 
