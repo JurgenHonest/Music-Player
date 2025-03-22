@@ -41,7 +41,7 @@ _(A sneak peek of the sleek and stylish music player UI)_
 
 ---
 
-## 🔧 Installation & Usage  
+## 🔧 Installation
 
 1. **Clone this repository:**  
    ```
